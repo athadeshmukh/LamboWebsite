@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">Lamborghini</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Models</li>
+            <li><a href="#"></a>Dealership</li>
+            <li><a href="#"></a>Store</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./pic1.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Luxury At It's Finest</h2>
+            <div class="line"></div>
+            <h1>THE FIRST LMDH PROTOTYPE</h1>
+            <a href="#" class="ctn">Learn More</a>
+    </div>
+    </header>
+
+    <section class="models topContainer">
+        <div class="title">
+            <h1>Models</h1>
+            <div class="line1"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <img src="./pic2.webp" alt="">
+            <h4>HURACÁN</h4>
+            <p>The Huracán EVO Spyder lets one experience the thrill of extreme driving. Colors, smells and sounds meld with a seductive design and ultra-light materials. 
+                The 640 hp naturally aspirated V10 engine roars with authority, as the exhaust announces the presence of a formidable machine. The aerodynamic lines of the super sports car, perfectly streamlined, slice through the air</p>
+            <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./pic4.webp" alt="">
+                <h4>AVENTADOR</h4>
+                <p>Lamborghini created the Aventador SVJ to embrace challenges head-on, combining cutting-edge technology with extraordinary design, while always refusing to compromise. In a future driven by technology, it’s easy to lose the genuine thrill of driving. But in the future shaped by Lamborghini, this won’t be left behind, because there will always be a driver behind the wheel.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./pic3.webp" alt="">
+                <h4>URUS</h4>
+                <p>The Urus Pearl Capsule offers a selection of exclusive pearl paints and style elements that embrace the bright colors of Lamborghini tradition. This new realm of customization showcases the inimitable style and exhilarating performance of the world’s first Super Sport Utility Vehicle. Take the freedom of Urus to a higher level by forging new paths as an expression of yourself. Unlock any road, unlock your personality.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+                </div>
+        </div>
+    </section>
+
+    <section class="news middleContainer">
+        <div class="title">
+            <h1>News At Lamborghini World</h1>
+            <div class="line1"></div>
+        </div>
+        <div class="row asd">
+            <div class="col">
+            <img src="./pic5.png" alt="">
+            <h4>19 MAY 2022</h4>
+            <p>LAMBORGHINI FOR THE BEES: CELEBRATING WORLD BEE DAY</p>
+            </div>
+            <div class="col">
+                <img src="./pic6.png" alt="">
+                <h4>18 MAY 2022</h4>
+                <p>V12: TRIBUTE TO THE ENGINE THAT MADE THE LAMBORGHINI DNA</p>
+            </div>
+        </section>
+
+        <div class="footer bottomContainer">
+            <p>Copyright © 2022 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group.</p>
+            <p>All rights reserved. VAT no. IT 00591801204</p>
+        </div>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+</body>
+</html>

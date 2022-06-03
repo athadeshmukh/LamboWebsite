@@ -154,7 +154,7 @@ h4 {
 
 .news {
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     margin-bottom: 50px;
 }
 
@@ -164,30 +164,53 @@ h4 {
     font-size: 5vmin;
 }
 
-.asd {
-    margin: auto 10px;
-    width: 100%;
-    justify-content: space-between;
+/****************** MIDDLE ROW ******************/
+.middleRow {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.middleCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.middleCol img{
     display: flex;
 }
+.middleRow p {
+    text-align: center;
+}
 
-.asd p {
-    color: antiquewhite;
+/* Breakpoint for middleRow section */
+@media screen and (max-width: 1350px) {
+    .middleRow{
+        flex-direction: column;
+    }
+    .middleCol{
+        margin: 1.5rem;
+    }
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     min-height: 100px;
-    padding: 20px 80px;
+    padding-top: 2.5rem;
     margin: 0;
     background: #e8d461;
     text-align: center;
 }
-
-.footer p {
+.copyright {
     color: #2b303e;
-    margin: 20px auto;
-    padding: 20px auto;
+    margin: 0 0 0.15rem 0;
+}
+.allRightsReserved{
+    color: #2b303e;
+    margin: 0.15rem 0 0 0;
 }
 
 @media only screen and (max-width:850px){
@@ -218,9 +241,9 @@ h4 {
     .nav-links li{
         margin: 30px auto;
     }
-    .asd {
+    /* .middleRow {
         flex-direction: column;
-    }
+    } */
     p {
         font-size: 15px;
     }
@@ -240,3 +263,8 @@ img:hover {
     background: #defad7;
     color: #c4ae37;
 }
+
+/************************** FIXES **************************/
+/* Just renamed "asd" to "middleRow" for better semantic */
+/*********** 1) Removed height: 80vh from .news ***********/
+/* 2) Changes made from line 166 to line 214 in style.css */
